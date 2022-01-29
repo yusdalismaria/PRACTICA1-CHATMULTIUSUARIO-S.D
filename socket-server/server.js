@@ -8,10 +8,6 @@ const io = require("socket.io")(httpServer, {
 });
 const PORT = 7000;
 
-// app.get("/", (req, res) => {
-//   res.status(200).json({ name: "Server" });
-// });
-
 const users = {};
 
 io.on("connection", (socket) => {
