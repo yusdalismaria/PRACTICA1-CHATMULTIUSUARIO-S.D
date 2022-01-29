@@ -11,9 +11,9 @@ const PORT = 7000;
 const users = {};
 
 io.on("connection", (socket) => {
-  console.log("someone connecte and socket id " + socket.id);
+  console.log("Alguien se conecto, y su ID es: " + socket.id);
 
-  socket.on("disconnect", () => {
+  socket.on("Se desconecto ", () => {
     console.log(`${socket.id} disconnected`);
 
     for (let user in users) {
